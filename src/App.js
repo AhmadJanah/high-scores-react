@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ScoreTable from "./ScoreTable";
 import scores from "./scores";
