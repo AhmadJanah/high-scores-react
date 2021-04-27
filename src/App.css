@@ -2,6 +2,40 @@
   text-align: center;
 }
 
+.score-table td{
+  width: 20rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.score-table tr{
+  border-radius: 1px;
+  border-style: solid;
+}
+
+h1, h2{
+  color: aqua;
+}
+
+.score-div{
+  border: chartreuse solid 15px;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+
+.comp-div{
+  border: rgb(51, 10, 236) solid 2px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.score-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,14 +48,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
 }
 
 .App-link {

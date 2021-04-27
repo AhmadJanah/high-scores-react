@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import ScoreTable from "./ScoreTable";
+import scores from "./scores";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload My High score.
         </p>
@@ -16,8 +18,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
+      <main className="App-body">
+        <ScoreTable tableScores={scores} />
+      </main>
     </div>
   );
 }
