@@ -5,11 +5,9 @@ function ScoreTable(props) {
     function sortScores() {
         if (sorted % 2 == 0) {
             props.tableScores.map(coun => coun.scores.sort(compareNum).reverse());
-            console.log("First");
         }
         else {
             props.tableScores.map(coun => coun.scores.sort(compareNum));
-            console.log("Second");
         }
         setSorted(sorted + 1);
     }
