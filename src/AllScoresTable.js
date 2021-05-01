@@ -2,7 +2,7 @@ import React, { useState } from "react";
 function AllScoresTable(props) {
     const [sorted, setSorted] = useState(0);
     function sortScores() {
-        if (sorted % 2 == 0) {
+        if (sorted % 2 === 0) {
             props.tableScores.sort(compareNum).reverse();
         }
         else {

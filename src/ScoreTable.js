@@ -3,7 +3,7 @@ import ScoreRow from "./ScoreRow";
 function ScoreTable(props) {
     const [sorted, setSorted] = useState(0);
     function sortScores() {
-        if (sorted % 2 == 0) {
+        if (sorted % 2 === 0) {
             props.tableScores.map(coun => coun.scores.sort(compareNum).reverse());
         }
         else {
