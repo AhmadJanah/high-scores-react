@@ -29,6 +29,12 @@ let allCountryScores = [
         name: "Bangladesh",
         scores: [{ n: "rahman", s: 700200 }, { n: "rayhan", s: 18238123 }, { n: "ali", s: 5400000 }]
     },
+    {
+    name: "Syria",
+    scores: [{ n: "Fayez", s: 198700200 }, { n: "Ahmad", s: 124 }, { n: "Safi", s: 540770 }]
+    },
 ];
+
+// allCountryScores.map(coun => coun.scores.sort(compareNum).reverse());
 
 export default allCountryScores;

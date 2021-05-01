@@ -58,6 +58,15 @@ h1, h2{
   /* color: white; */
 }
 
+.sort-button{
+  width: 10rem;
+  height: 2rem;
+  background-color: #61dafb;
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 2rem;;
+}
+
 .App-body {
   display: flex;
   flex-direction: column;
