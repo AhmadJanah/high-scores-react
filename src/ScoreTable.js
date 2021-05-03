@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import ScoreRow from "./ScoreRow";
+
 function ScoreTable(props) {
     const [sorted, setSorted] = useState(0);
+    let scoresArray = [...props.tableScores];
+    console.log(scoresArray);
     function sortScores() {
         if (sorted % 2 === 0) {
-            props.tableScores.map(coun => coun.scores.sort(compareNum).reverse());
+            scoresArray.map(coun => coun.scores.sort(compareNum).reverse());
         }
         else {
-            props.tableScores.map(coun => coun.scores.sort(compareNum));
+            scoresArray.map(coun => coun.scores.sort(compareNum));
         }
         setSorted(sorted + 1);
     }
@@ -15,12 +18,12 @@ function ScoreTable(props) {
         <div className="comp-div">
             <h1>High Scores Per Country</h1>
             <button className="sort-button" onClick={sortScores}>Sort Scores: {sorted}</button>
-            {props.tableScores.map(score => (
+            {scoresArray.map(score => (
                 <div key={score.name} className="score-div">
                     <h2>HIGH SCORES: {score.name}</h2>
                     <table className="APP score-table">
                         <thead>
-                            {score.scores.sort(compareNum).map(high => (
+                            {score.scores.map(high => (
                                 <ScoreRow score={high} />
                             ))}
                         </thead>
